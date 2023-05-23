@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-oxdd
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/lucarval-tenant/my-app/devfile-sample-python-basic-oxdd@sha256:6dce1be974d4aefefb5775e807368567efe471df4ce6b5c2863ab3cbb5151b31
+        name: my-python
+        resources: {}
+status: {}
